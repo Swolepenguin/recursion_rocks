@@ -7,8 +7,21 @@
 # Represent the two outcomes of each flip as "H" or "T"
 
 def coin_flips(n):
-    # Write code here
-    pass
+    number = input(5)
+    recordlist = []
+    heads = 0
+    tails = 0
+    for amount in range(number):
+        flip = random.randomint(0,1)
+        if (flip == 0):
+            print("heads")
+        else:
+            print("tails")
+            recordlist.append(tails)
+    print(str(recordlist))
+    print(str(recordlist.count("heads")) + str(recordlist.count("tails")))
+   
+coin_flips()
 
 # print(coinFlips(2)) 
 # => ["HH", "HT", "TH", "TT"]

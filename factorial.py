@@ -4,8 +4,12 @@
 # This function returns the factorial of a given number.
 
 def factorial(n):
-    # Write code here
-    pass
+   if n == 1:
+       return n
+    else:
+        return n*factorial(n-1)
+
+factorial()
 
 # print(factorial(5))
 # => 120
